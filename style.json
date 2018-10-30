@@ -4734,7 +4734,7 @@
         "text-font": [
           "Noto Sans Italic"
         ],
-        "text-field": "{name:latin}",
+        "text-field": "{name_en}",
         "text-size": {
           "stops": [
             [
@@ -4787,7 +4787,7 @@
         "text-font": [
           "Noto Sans Bold"
         ],
-        "text-field": "{name:latin}",
+        "text-field": "{name_en}",
         "text-size": {
           "stops": [
             [
@@ -4840,7 +4840,7 @@
         "text-font": [
           "Noto Sans Bold"
         ],
-        "text-field": "{name:latin}",
+        "text-field": "{name_en}",
         "text-size": {
           "stops": [
             [
@@ -4893,7 +4893,7 @@
         "text-font": [
           "Noto Sans Bold"
         ],
-        "text-field": "{name:latin}",
+        "text-field": "{name_en}",
         "text-size": {
           "stops": [
             [
@@ -4935,7 +4935,7 @@
         "text-font": [
           "Noto Sans Bold"
         ],
-        "text-field": "{name:latin}",
+        "text-field": "{name_en}",
         "text-size": 14,
         "text-max-width": 6.25,
         "text-transform": "uppercase",
