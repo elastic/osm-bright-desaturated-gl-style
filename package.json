@@ -1,0 +1,23 @@
+{
+  "name": "@elastic/osm-bring-desaturated-gl-style",
+  "version": "1.0.0",
+  "description": "OpenMapTiles OSM Bright GL Style with muted colors to replicate CSS transforms in Kibana <v7",
+  "main": "scripts/desaturate.js",
+  "dependencies": {
+    "chroma-js": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elastic/osm-bright-desaturated-gl-style.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/elastic/osm-bright-desaturated-gl-style/issues"
+  },
+  "homepage": "https://github.com/elastic/osm-bright-desaturated-gl-style#readme"
+}
