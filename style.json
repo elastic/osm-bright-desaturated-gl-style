@@ -3782,6 +3782,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "water_name",
+      "minzoom": 1.1,
       "filter": [
         "all",
         [
@@ -3818,6 +3819,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "water_name",
+      "minzoom": 1.1,
       "filter": [
         "all",
         [
@@ -4713,6 +4715,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 1.1,
       "filter": [
         "all",
         [
@@ -4766,6 +4769,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 1.1,
       "filter": [
         "all",
         [
@@ -4819,6 +4823,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 1.1,
       "filter": [
         "all",
         [
@@ -4872,6 +4877,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 1.1,
       "filter": [
         "all",
         [
@@ -4925,7 +4931,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
-      "maxzoom": 1,
+      "maxzoom": 1.1,
       "filter": [
         "==",
         "class",
