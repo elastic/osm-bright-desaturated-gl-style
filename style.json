@@ -2034,7 +2034,20 @@
         "text-max-width": 9,
         "text-size": {"base": 1.2, "stops": [[12, 10], [15, 14]]},
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-variable-anchor": [
+          "center",
+          "top-right",
+          "right",
+          "bottom-right",
+          "bottom",
+          "bottom-left",
+          "left",
+          "top-left",
+          "top"
+        ],
+        "text-radial-offset": 0.1
       },
       "paint": {
         "text-color": "rgba(89,77,76,1)",
