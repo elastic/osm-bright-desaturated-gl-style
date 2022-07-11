@@ -1075,7 +1075,7 @@
       "metadata": {"mapbox:group": "1444849345966.4436"},
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 5,
+      "minzoom": 4,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2115,6 +2115,33 @@
       "layout": {
         "text-font": ["Noto Sans Regular"],
         "text-size": {"base": 1.2, "stops": [[5, 10], [7, 14], [11, 20]]},
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-max-width": 8,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(64,64,64,1)",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "place-city-high-rank",
+      "type": "symbol",
+      "metadata": {"mapbox:group": "1444849242106.713"},
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 0,
+      "filter": [
+        "all",
+        ["==", ["get", "class"], "city"],
+        ["!=", ["get", "capital"], 2],
+        ["<=", ["get", "rank"], 3],
+        ["step", ["zoom"], true, 3, ["<=", ["get", "rank"], 3]]
+      ],
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {"base": 1.2, "stops": [[5, 11], [7, 14], [11, 22]]},
         "text-field": "{name:latin}\n{name:nonlatin}",
         "text-max-width": 8,
         "visibility": "visible"
