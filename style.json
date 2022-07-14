@@ -2115,7 +2115,7 @@
           true,
           3,
           ["<=", ["get", "rank"], 3],
-          5,
+          4,
           ["<=", ["get", "rank"], 5],
           6,
           ["<=", ["get", "rank"], 8],
@@ -2183,9 +2183,11 @@
         "text-field": "{name:latin}\n{name:nonlatin}",
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
-        "text-offset": [0.4, 0],
         "text-size": {"base": 1.2, "stops": [[5, 14], [7, 18], [11, 22]]},
-        "visibility": "visible"
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-variable-anchor": ["left", "top-left", "bottom-left"],
+        "text-radial-offset": 0.4
       },
       "paint": {
         "text-color": "rgba(64,64,64,1)",
@@ -2296,7 +2298,10 @@
         "text-size": {"stops": [[1, 11], [4, 17]]},
         "text-transform": "uppercase",
         "text-max-width": 6.25,
-        "visibility": "visible"
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-variable-anchor": ["center", "bottom", "top"],
+        "text-radial-offset": 0.1
       },
       "paint": {
         "text-color": "rgba(66,66,66,1)",
