@@ -1517,7 +1517,7 @@
       "paint": {
         "line-color": "rgba(173,173,173,1)",
         "line-dasharray": [3, 1, 1, 1],
-        "line-width": {"base": 1.4, "stops": [[4, 0.4], [5, 1], [12, 3]]}
+        "line-width": {"base": 1.4, "stops": [[4, 0.4], [5, 1], [14, 2]]}
       }
     },
     {
