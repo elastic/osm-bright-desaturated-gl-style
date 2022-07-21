@@ -2050,7 +2050,11 @@
           "top-left",
           "top"
         ],
-        "text-radial-offset": 0.1
+        "text-radial-offset": 0.1,
+        "text-padding": {
+          "base": 5,
+          "stops": [[0, 5], [5, 10], [10, 15], [15, 25]]
+        }
       },
       "paint": {
         "text-color": "rgba(89,77,76,1)",
