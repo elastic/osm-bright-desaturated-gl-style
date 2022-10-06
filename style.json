@@ -2021,6 +2021,7 @@
       "metadata": {"mapbox:group": "1444849242106.713"},
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 6,
       "filter": [
         "!in",
         "class",
@@ -2110,7 +2111,7 @@
       "metadata": {"mapbox:group": "1444849242106.713"},
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 0,
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", ["get", "class"], "city"],
