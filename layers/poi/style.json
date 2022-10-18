@@ -1,0 +1,235 @@
+{
+  "layers": [
+    {
+      "id": "poi-level-3",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 16,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          ">=",
+          "rank",
+          25
+        ],
+        [
+          "any",
+          [
+            "!has",
+            "level"
+          ],
+          [
+            "==",
+            "level",
+            0
+          ]
+        ]
+      ],
+      "layout": {
+        "icon-image": "{class}_11",
+        "text-anchor": "top",
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-max-width": 9,
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-padding": 2,
+        "text-size": 12,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(117,117,117,1)",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(255,255,255,1)",
+        "text-halo-width": 1
+      },
+      "order": 90
+    },
+    {
+      "id": "poi-level-2",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "<=",
+          "rank",
+          24
+        ],
+        [
+          ">=",
+          "rank",
+          15
+        ],
+        [
+          "any",
+          [
+            "!has",
+            "level"
+          ],
+          [
+            "==",
+            "level",
+            0
+          ]
+        ]
+      ],
+      "layout": {
+        "icon-image": "{class}_11",
+        "text-anchor": "top",
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-max-width": 9,
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-padding": 2,
+        "text-size": 12,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(117,117,117,1)",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(255,255,255,1)",
+        "text-halo-width": 1
+      },
+      "order": 91
+    },
+    {
+      "id": "poi-level-1",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "<=",
+          "rank",
+          14
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "any",
+          [
+            "!has",
+            "level"
+          ],
+          [
+            "==",
+            "level",
+            0
+          ]
+        ]
+      ],
+      "layout": {
+        "icon-image": "{class}_11",
+        "text-anchor": "top",
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-max-width": 9,
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-padding": 2,
+        "text-size": 12,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(117,117,117,1)",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(255,255,255,1)",
+        "text-halo-width": 1
+      },
+      "order": 92
+    },
+    {
+      "id": "poi-railway",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "==",
+          "class",
+          "railway"
+        ],
+        [
+          "==",
+          "subclass",
+          "station"
+        ]
+      ],
+      "layout": {
+        "icon-allow-overlap": false,
+        "icon-ignore-placement": false,
+        "icon-image": "{class}_11",
+        "icon-optional": false,
+        "text-allow-overlap": false,
+        "text-anchor": "top",
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-ignore-placement": false,
+        "text-max-width": 9,
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-optional": true,
+        "text-padding": 2,
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "rgba(117,117,117,1)",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(255,255,255,1)",
+        "text-halo-width": 1
+      },
+      "order": 93
+    }
+  ]
+}
