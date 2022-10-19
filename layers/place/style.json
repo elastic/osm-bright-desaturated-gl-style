@@ -8,6 +8,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 6,
       "filter": [
         "!in",
         "class",
@@ -173,7 +174,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 0,
+      "minzoom": 6,
       "filter": [
         "all",
         [
