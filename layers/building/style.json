@@ -1,0 +1,79 @@
+{
+  "layers": [
+    {
+      "id": "building",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849364238.8171"
+      },
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": {
+          "base": 1,
+          "stops": [
+            [
+              15.5,
+              "rgba(252,252,252,1)"
+            ],
+            [
+              16,
+              "rgba(236,236,236,1)"
+            ]
+          ]
+        }
+      },
+      "order": 23
+    },
+    {
+      "id": "building-top",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849364238.8171"
+      },
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(252,252,252,1)",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              16,
+              1
+            ]
+          ]
+        },
+        "fill-outline-color": "rgba(236,236,236,1)",
+        "fill-translate": {
+          "base": 1,
+          "stops": [
+            [
+              14,
+              [
+                0,
+                0
+              ]
+            ],
+            [
+              16,
+              [
+                -2,
+                -2
+              ]
+            ]
+          ]
+        }
+      },
+      "order": 24
+    }
+  ]
+}
