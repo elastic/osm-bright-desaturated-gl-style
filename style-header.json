@@ -9,11 +9,11 @@
     "sources": {
       "openmaptiles": {
         "type": "vector",
-        "url": "https://tiles.maps.elastic.dev/data/v3.json"
+        "url": "https://tiles.maps.elastic.co/data/v3.json"
       }
     },
-    "sprite": "https://tiles.maps.elastic.dev/styles/osm-bright-desaturated/sprite",
-    "glyphs": "https://tiles.maps.elastic.dev/fonts/{fontstack}/{range}.pbf",
+    "sprite": "https://tiles.maps.elastic.co/styles/osm-bright-desaturated/sprite",
+    "glyphs": "https://tiles.maps.elastic.co/fonts/{fontstack}/{range}.pbf",
     "metadata": {
       "mapbox:autocomposite": false,
       "mapbox:groups": {
