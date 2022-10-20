@@ -12,11 +12,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://tiles.maps.elastic.dev/data/v3.json"
+      "url": "https://tiles.maps.elastic.co/data/v3.json"
     }
   },
-  "sprite": "https://tiles.maps.elastic.dev/styles/osm-bright-desaturated/sprite",
-  "glyphs": "https://tiles.maps.elastic.dev/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://tiles.maps.elastic.co/styles/osm-bright-desaturated/sprite",
+  "glyphs": "https://tiles.maps.elastic.co/fonts/{fontstack}/{range}.pbf",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:groups": {
@@ -4558,11 +4558,11 @@
           "base": 1,
           "stops": [
             [
-              7,
+              6,
               "point"
             ],
             [
-              8,
+              7,
               "line"
             ]
           ]
@@ -4680,12 +4680,15 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
+      "minzoom": 2,
       "filter": [
         "!in",
         "class",
         "city",
         "town",
         "village",
+        "province",
+        "state",
         "country",
         "continent"
       ],
@@ -4750,6 +4753,181 @@
         "text-color": "rgba(89,77,76,1)",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "place-state-2",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713"
+      },
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 4,
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "province",
+          "state"
+        ],
+        [
+          ">",
+          "rank",
+          3
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name:en"
+          ],
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name:latin"
+          ]
+        ],
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 9,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              15,
+              14
+            ]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-padding": {
+          "base": 5,
+          "stops": [
+            [
+              3,
+              15
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              15,
+              25
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-color": "rgba(89,77,76,1)"
+      }
+    },
+    {
+      "id": "place-state-1",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713"
+      },
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 0,
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "state"
+        ],
+        [
+          "<=",
+          "rank",
+          3
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name:en"
+          ],
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name:latin"
+          ]
+        ],
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 9,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              0,
+              7
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              15,
+              14
+            ]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-padding": {
+          "base": 5,
+          "stops": [
+            [
+              0,
+              10
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              10,
+              15
+            ],
+            [
+              15,
+              25
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-color": "rgba(89,77,76,1)"
       }
     },
     {
@@ -4842,7 +5020,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 0,
+      "minzoom": 6,
       "filter": [
         "all",
         [
@@ -4867,7 +5045,7 @@
             "get",
             "rank"
           ],
-          3
+          5
         ],
         [
           "step",
@@ -4882,7 +5060,7 @@
               "get",
               "rank"
             ],
-            3
+            5
           ],
           4,
           [
@@ -5004,7 +5182,7 @@
             "get",
             "rank"
           ],
-          3
+          5
         ],
         [
           "step",
@@ -5019,7 +5197,7 @@
               "get",
               "rank"
             ],
-            3
+            5
           ]
         ]
       ],
@@ -5117,60 +5295,6 @@
       }
     },
     {
-      "id": "place-country-other",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713"
-      },
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "minzoom": 1.1,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "country"
-        ],
-        [
-          ">=",
-          "rank",
-          3
-        ],
-        [
-          "!has",
-          "iso_a2"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Noto Sans Italic"
-        ],
-        "text-field": "{name_en}",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              11
-            ],
-            [
-              7,
-              17
-            ]
-          ]
-        },
-        "text-transform": "uppercase",
-        "text-max-width": 6.25,
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "rgba(66,66,66,1)",
-        "text-halo-blur": 1,
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2
-      }
-    },
-    {
       "id": "place-country-3",
       "type": "symbol",
       "metadata": {
@@ -5192,8 +5316,16 @@
           3
         ],
         [
-          "has",
-          "iso_a2"
+          "any",
+          [
+            "has",
+            "iso_a2"
+          ],
+          [
+            "==",
+            "name_en",
+            "Netherlands"
+          ]
         ]
       ],
       "layout": {
@@ -5204,8 +5336,8 @@
         "text-size": {
           "stops": [
             [
-              3,
-              11
+              1,
+              8
             ],
             [
               7,
@@ -5246,8 +5378,16 @@
           2
         ],
         [
-          "has",
-          "iso_a2"
+          "any",
+          [
+            "has",
+            "iso_a2"
+          ],
+          [
+            "==",
+            "name_en",
+            "Netherlands"
+          ]
         ]
       ],
       "layout": {
@@ -5258,8 +5398,8 @@
         "text-size": {
           "stops": [
             [
-              2,
-              11
+              1,
+              9
             ],
             [
               5,
@@ -5300,8 +5440,16 @@
           1
         ],
         [
-          "has",
-          "iso_a2"
+          "any",
+          [
+            "has",
+            "iso_a2"
+          ],
+          [
+            "==",
+            "name_en",
+            "Netherlands"
+          ]
         ]
       ],
       "layout": {
@@ -5313,11 +5461,11 @@
           "stops": [
             [
               1,
-              11
+              9
             ],
             [
               4,
-              17
+              15
             ]
           ]
         },
@@ -5330,7 +5478,7 @@
           "bottom",
           "top"
         ],
-        "text-radial-offset": 0.1
+        "text-radial-offset": 0.5
       },
       "paint": {
         "text-color": "rgba(66,66,66,1)",

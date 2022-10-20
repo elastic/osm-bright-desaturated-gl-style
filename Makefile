@@ -25,6 +25,7 @@ openmaptiles: # Clone the openmaptiles repository locally
 		--single-branch \
 		--depth 1 \
 		openmaptiles
+	rm -rf openmaptiles/.git
 
 .PHONY: split
 split: openmaptiles # Split the current style into the layer folders
@@ -35,7 +36,6 @@ split: openmaptiles # Split the current style into the layer folders
 				/workdir/style.json
 	rsync -rv --include="*/" --include="style.json" --exclude="*" \
 		openmaptiles/layers/ layers/
-	rm -rf openmaptiles
 
 style.json: openmaptiles# Merges the layer from each OMT folder into a final style
 	rsync -rv --include="*/" --include="style.json" --exclude="*" \
@@ -46,4 +46,3 @@ style.json: openmaptiles# Merges the layer from each OMT folder into a final sty
 				/workdir/openmaptiles/openmaptiles.yaml \
 				/workdir/style.json \
 				/workdir/style-header.json
-	rm -rf openmaptiles
