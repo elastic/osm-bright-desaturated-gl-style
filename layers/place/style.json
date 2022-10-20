@@ -656,61 +656,6 @@
       "order": 110
     },
     {
-      "id": "place-country-other",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713"
-      },
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "minzoom": 1.1,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "country"
-        ],
-        [
-          ">=",
-          "rank",
-          3
-        ],
-        [
-          "!has",
-          "iso_a2"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Noto Sans Italic"
-        ],
-        "text-field": "{name_en}",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              11
-            ],
-            [
-              7,
-              17
-            ]
-          ]
-        },
-        "text-transform": "uppercase",
-        "text-max-width": 6.25,
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "rgba(66,66,66,1)",
-        "text-halo-blur": 1,
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2
-      },
-      "order": 111
-    },
-    {
       "id": "place-country-3",
       "type": "symbol",
       "metadata": {
@@ -732,8 +677,16 @@
           3
         ],
         [
-          "has",
-          "iso_a2"
+          "any",
+          [
+            "has",
+            "iso_a2"
+          ],
+          [
+            "==",
+            "name_en",
+            "Netherlands"
+          ]
         ]
       ],
       "layout": {
@@ -763,7 +716,7 @@
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2
       },
-      "order": 112
+      "order": 111
     },
     {
       "id": "place-country-2",
@@ -787,8 +740,16 @@
           2
         ],
         [
-          "has",
-          "iso_a2"
+          "any",
+          [
+            "has",
+            "iso_a2"
+          ],
+          [
+            "==",
+            "name_en",
+            "Netherlands"
+          ]
         ]
       ],
       "layout": {
@@ -818,7 +779,7 @@
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2
       },
-      "order": 113
+      "order": 112
     },
     {
       "id": "place-country-1",
@@ -842,8 +803,16 @@
           1
         ],
         [
-          "has",
-          "iso_a2"
+          "any",
+          [
+            "has",
+            "iso_a2"
+          ],
+          [
+            "==",
+            "name_en",
+            "Netherlands"
+          ]
         ]
       ],
       "layout": {
@@ -880,7 +849,7 @@
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2
       },
-      "order": 114
+      "order": 113
     },
     {
       "id": "place-continent",
@@ -912,7 +881,7 @@
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2
       },
-      "order": 115
+      "order": 114
     }
   ]
 }
