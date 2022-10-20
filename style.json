@@ -4815,18 +4815,6 @@
         "text-transform": "uppercase",
         "visibility": "visible",
         "symbol-placement": "point",
-        "text-variable-anchor": [
-          "center",
-          "top-right",
-          "right",
-          "bottom-right",
-          "bottom",
-          "bottom-left",
-          "left",
-          "top-left",
-          "top"
-        ],
-        "text-radial-offset": 0.1,
         "text-padding": {
           "base": 5,
           "stops": [
@@ -4914,18 +4902,6 @@
         "text-transform": "uppercase",
         "visibility": "visible",
         "symbol-placement": "point",
-        "text-variable-anchor": [
-          "center",
-          "top-right",
-          "right",
-          "bottom-right",
-          "bottom",
-          "bottom-left",
-          "left",
-          "top-left",
-          "top"
-        ],
-        "text-radial-offset": 0.1,
         "text-padding": {
           "base": 5,
           "stops": [
