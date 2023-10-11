@@ -39,19 +39,7 @@
       },
       "paint": {
         "fill-color": "rgba(252,252,252,1)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              16,
-              1
-            ]
-          ]
-        },
+        "fill-opacity": 1,
         "fill-outline-color": "rgba(236,236,236,1)",
         "fill-translate": {
           "base": 1,
@@ -73,6 +61,7 @@
           ]
         }
       },
+      "minzoom": 14,
       "order": 24
     }
   ]

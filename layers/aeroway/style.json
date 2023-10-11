@@ -90,7 +90,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
-      "minzoom": 4,
+      "minzoom": 12,
       "filter": [
         "all",
         [
@@ -110,19 +110,7 @@
       },
       "paint": {
         "fill-color": "rgba(255,255,255,1)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              14,
-              1
-            ]
-          ]
-        }
+        "fill-opacity": 1
       },
       "order": 40
     },
